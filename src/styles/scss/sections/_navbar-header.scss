@@ -1,0 +1,45 @@
+body {
+  padding                   : 0;
+  margin                    : 0;
+  font-size                 : 15px ;
+  font-family               : $font-primary-01 ;
+  .navbar-header-color{
+    background-color        : $color-primary-01; 
+    .navbar-header{
+      .navbar-toggle:hover {
+        .icon-bar{
+          background-color  : $color-primary-01;
+        }
+      }
+      .navbar-header-brand-color{
+        &:hover{
+          background-color   : $color-primary-02 ;
+        }
+        a{
+          color               : $color-secondary-01;
+          
+        }
+      }
+    }
+    .navbar-header-link-color{
+      ul{
+        li{
+            a{
+              color           :  $color-secondary-01 ;
+              font-family     : $font-primary-02;
+              font-size       : 20px ;
+            }
+            a:visited,a:focus,a:active{
+              color           : $color-secondary-01 ;
+              background-color: $color-primary-02 ;
+            }
+            a:hover{
+              color           : $color-secondary-01 ;
+              background-color: $color-primary-02 ;
+            }
+        }
+      }
+    }
+  }
+  
+}

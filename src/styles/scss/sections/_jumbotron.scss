@@ -1,0 +1,62 @@
+ .jumbotron{
+  padding-top             : 75px;
+  background-color        : $color-primary-02; 
+  .container{
+      .form-group{
+        .form-control{
+          width            : 500px;
+        }
+        
+      h3{
+        color             : $color-secondary-02;
+        font-size         : 24px;
+      }
+      p{
+        color             : $color-secondary-02 ;
+      }
+      .btn-group a{
+        font-size         : 25px ;
+        color             : $color-secondary-01 ;
+      }
+      .button-bgcolor{
+        background-color  : $color-secondary-01; 
+      }
+
+      .slider{
+        .ui-slider-range { 
+          background      : $color-primary-01;
+        }
+        .ui-slider-handle {
+          border-color   : $color-primary-02; 
+       }
+        border            : 0; 
+        color             : $color-secondary-02;
+        width             : 500px;
+        .ageRangeFrom,.ageRangeTo{
+          width           : 3em;
+          height          : 1.6em;
+          top             : 50%;
+          margin-top      : -.8em;
+          text-align      : center;
+          line-height     : 1.6em;
+        }
+       /* .ageRangeToTip{
+          margin-left: 500px;
+          font-size: 0.7em;
+        
+        }
+        .ageRangeFromTip{
+          margin-right: 500px;
+          font-size: 0.7em;
+        }
+      */
+      }
+    }
+  }
+
+  @media (min-width:1440px) {
+    padding-top         : 100px;
+  }
+}
+
+

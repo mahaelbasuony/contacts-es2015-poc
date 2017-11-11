@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Search</title>
+  <link rel="stylesheet" href="src/styles/css/vendors.css" />
+  <link rel="stylesheet" href="src/styles/css/theme.css" />
+</head>
+
+<body data-spy="scroll" data-target="#main-navbar">
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-header-color" data-spy="affix" id="main-navbar">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ex1">
+                  <span class="sr-only">this not be shown</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+            </button>
+          <div class="navbar-header-brand-color"><a href="" class="navbar-brand "><strong>Brand</strong></a></div>
+        </div>
+        <div class="collapse navbar-collapse navigation navbar-header-link-color" id="ex1">
+          <ul class="nav navbar-nav ">
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Search</a></li>
+            <li><a href="#contact">Login</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="jumbotron">
+      <div class="container text-center">
+        <h3>This is a search for people Names and ages </h3>
+        <form action="" class="form-inline">
+          <div class="form-group">
+            <label for="" class="sr-only">type to filter</label>
+            <input type="search" name="" id="searchtxt" class="form-control" placeholder="type Name to filter">
+          </div>
+          
+          <br><br>
+          <div class="form-group ui-widget-content">
+            
+            <div id="slider" class="slider " >
+              
+              <span id="custom-handle-from" class="ui-slider-handle ageRangeFrom" ></span>
+              <span id="custom-handle-to" class="ui-slider-handle ageRangeTo"></span>
+
+             <!-- <span id="ageRangeFrom"  class="ageRangeFromTip"></span>
+              <span id="ageRangeTo"  class="ageRangeToTip"></span>-->
+
+              
+            </div>
+          </div>
+          
+        </form>
+       
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+      <div class="container">
+        <h2>
+          <div id="ShowMyResultSearch"></div>
+        </h2>
+      </div> 
+  </section>
+  
+  <footer class="footer">
+    <div class="container text-center">
+      <ul class="list-inline">
+        <li><a href="">Twiter</a></li>
+        <li><a href="">facebook</a></li>
+      </ul>
+      <p>&copy; copyright 2017.</p>
+    </div>
+  </footer>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="build/main.bundle.js"></script>
+  <script src="node_modules/jquery-ui/ui//ui/jquery.js"></script>
+  <script src="node_modules/jquery-ui/ui/ui/jquery-ui.js"></script>
+  <script>
+        angular.element(document).ready(function(){
+        angular.bootstrap(document);
+      })
+  </script>
+</body>
+
+</html>
